@@ -4,8 +4,135 @@ import { reactive } from 'vue';
 export default {
   data() {
     return {
-      row: [['UA','UA'],['UA','UA']],
+      row: [
+        [false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false],
+        [false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false],
+        [false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false],
+        [false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false],
+        [false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false],
+        [false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false],
+        [false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false],
+        [false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false],
+        [false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false],
+        [false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false],
+        [false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false],
+        [false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false],
+        [false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false],
+        [false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false],
+        [false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false],
+        [false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false],
+        [false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false],
+        [false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false],
+        [false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false],
+        [false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false],
+        [false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false],
+        [false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false],
+        [false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false],
+        [false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false],
+        [false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false,
+        false,false,false,false,false]
+      ],
       visible: false,
+      scaleVisible: false,
       instructions: [],
       position: {
         x: 0,
@@ -18,6 +145,13 @@ export default {
     }
   },
   methods: {
+    getBatteryInfo() {
+      const api = 'http://localhost:5000/batt'
+      this.axios.get(api).then((response) => {
+        console.log(response.data)
+        alert(response.data)
+      })
+    },
     selectBox(x, y) {
       this.visible = true;
       console.log(x,y)
@@ -29,7 +163,7 @@ export default {
       // this.row[value].push("#ffffff")
       this.row.forEach(function (item, index) {
         console.log(item,index)
-        item.push("UA")
+        item.push(false)
       })
     },
     removeColumn(value) {
@@ -44,7 +178,7 @@ export default {
       let loop = this.row[0].length
       let arr = []
       for (var i = 0; i < loop; i++) {
-        arr.push("UA")
+        arr.push(false)
       }
       console.log(arr)
       this.row.push(arr)
@@ -53,23 +187,29 @@ export default {
       this.row.pop()
     },
     setInstruction() {
-      let temp = {
-        dist: this.order.dist,
-        angle: this.order.angle
+      if ( this.instructions.length < 1 ) {
+        let temp = {
+          dist: 0,
+          angle: 0
+        }
+        this.instructions.push(temp)
+        this.row[this.position.x][this.position.y] = true
+        this.visible = false
+      } else {
+        let temp = {
+          dist: this.order.dist,
+          angle: this.order.angle
+        }
+        this.instructions.push(temp)
+        this.row[this.position.x][this.position.y] = true
+        this.visible = false
       }
-      this.instructions.push(temp)
-      this.row[this.position.x][this.position.y] = 'A'
-      this.visible = false
     },
-    white() {
-      return {
-        "background": 'white',
-      };
+    openSetScale() {
+      this.scaleVisible = true
     },
-    red() {
-      return {
-        "background": 'red',
-      };
+    setScale() {
+      this.scaleVisible = false
     }
   }
 }
@@ -80,7 +220,7 @@ export default {
     <p>Y: {{ position.y }}</p>
     <div>
       <p>Distance(cm):</p>
-      <a-input-number v-model:value="order.dist" placeholder="Enter Distance" />
+      <a-input-number v-model:value="order.dist" disabled/>
     </div>
     <div style="margin-top: 16px;">
       <p>Direction:</p>
@@ -92,9 +232,15 @@ export default {
       </a-radio-group>
     </div>
   </a-modal>
-  <div>
+  <a-modal v-model:visible="scaleVisible" title="Set Map Scale" @ok="setScale">
+    <div>
+      <p>Grid : Distance(cm) Ratio</p>
+      <a-input-number v-model:value="order.dist" placeholder="Enter Distance" />
+    </div>
+  </a-modal>
+  <div class="bg">
     <div class="inline" v-for="value, index in row">
-      <div class="box" v-for="value,idx in row[index]" @click="selectBox(index, idx)" >{{value}}</div>
+      <div :class="{touched: value, box: true}" v-for="value,idx in row[index]" @click="selectBox(index, idx)" ></div>
     </div>
   </div>
   <div class="margin">
@@ -106,20 +252,33 @@ export default {
       <h4>Rows: {{row.length}}</h4><a-button @click="removeRow">-</a-button><a-button @click="addRow">+</a-button>
     </div>
   </div>
-  <h4>{{ instructions }}</h4>
-  <h4>{{ order.angle }}</h4>
+  <a-button class="margin" @click="openSetScale">Set Scale</a-button>
+  <a-button class="margin" @click="getBatteryInfo">Check Drone Battery</a-button>
+  <p class="margin">Scale = 1 Grid : {{ order.dist }}cm</p>
+  <p class="margin">Command: </p>
+  <p class="margin">{{ instructions }}</p>
 </template>
 <style scoped>
 .box {
-  width: 50px; 
-  height: 50px; 
+  width: 20px; 
+  height: 20px; 
   border: 1px solid black;
   display: inline-block;
 }
 .inline {
-  height: 50px;
+  height: 20px;
 }
 .margin{
   margin-top: 16px;
+}
+.touched {
+  background: green;
+}
+.bg {
+  background-image: url("../assets/bg.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+  height: 500px;
 }
 </style>
