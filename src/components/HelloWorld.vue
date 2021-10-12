@@ -149,7 +149,6 @@ export default {
       const api = 'http://localhost:5000/batt'
       this.axios.get(api).then((response) => {
         console.log(response.data)
-        alert(response.data)
       })
     },
     selectBox(x, y) {
