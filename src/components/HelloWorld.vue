@@ -5,131 +5,181 @@ export default {
   data() {
     return {
       row: [
-        [false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false],
-        [false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false],
-        [false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false],
-        [false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false],
-        [false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false],
-        [false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false],
-        [false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false],
-        [false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false],
-        [false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false],
-        [false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false],
-        [false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false],
-        [false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false],
-        [false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false],
-        [false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false],
-        [false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false],
-        [false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false],
-        [false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false],
-        [false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false],
-        [false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false],
-        [false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false],
-        [false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false],
-        [false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false],
-        [false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false],
-        [false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false],
-        [false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false,
-        false,false,false,false,false]
+        [{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false }],
+         [{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false }],
+         [{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false }],
+         [{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false }],
+         [{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false }],
+         [{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false }],
+         [{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false }],
+         [{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false }],
+         [{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false }],
+         [{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false }],
+         [{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false }],
+         [{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false }],
+         [{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false }],
+         [{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false }],
+         [{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false }],
+         [{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false }],
+         [{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false }],
+         [{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false }],
+         [{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false }],
+         [{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false }],
+         [{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false }],
+         [{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false }],
+         [{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false }],
+         [{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false }],
+         [{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },{ cmd: false,start: false },
+         { cmd: false,start: false }]
       ],
       visible: false,
       scaleVisible: false,
@@ -163,31 +213,31 @@ export default {
     },
     selectBox(x, y) {
       this.visible = true;
-      console.log(x,y)
+      console.log(x, y)
       this.position.x = x
       this.position.y = y
     },
-    addColumn(value){
+    addColumn(value) {
       console.log(value)
       // this.row[value].push("#ffffff")
       this.row.forEach(function (item, index) {
-        console.log(item,index)
-        item.push(false)
+        console.log(item, index)
+        item.push({ cmd: false,start: false })
       })
     },
     removeColumn(value) {
       console.log(value)
       this.row.forEach(function (item, index) {
-        console.log(item,index)
+        console.log(item, index)
         item.pop()
       })
     },
-    addRow(){
+    addRow() {
       console.log(this.row[0].length)
       let loop = this.row[0].length
       let arr = []
       for (var i = 0; i < loop; i++) {
-        arr.push(false)
+        arr.push({ cmd: false,start: false })
       }
       console.log(arr)
       this.row.push(arr)
@@ -196,13 +246,13 @@ export default {
       this.row.pop()
     },
     setInstruction() {
-      if ( this.instructions.length < 1 ) {
+      if (this.instructions.length < 1) {
         let temp = {
           dist: 0,
           angle: 0
         }
         this.instructions.push(temp)
-        this.row[this.position.x][this.position.y] = true
+        this.row[this.position.x][this.position.y] = { cmd: false, start: true }
         this.visible = false
       } else {
         let temp = {
@@ -210,7 +260,7 @@ export default {
           angle: this.order.angle
         }
         this.instructions.push(temp)
-        this.row[this.position.x][this.position.y] = true
+        this.row[this.position.x][this.position.y] = { cmd: true, start: false }
         this.visible = false
       }
     },
@@ -229,7 +279,7 @@ export default {
     <p>Y: {{ position.y }}</p>
     <div>
       <p>Distance(cm):</p>
-      <a-input-number v-model:value="order.dist" disabled/>
+      <a-input-number v-model:value="order.dist" disabled />
     </div>
     <div style="margin-top: 16px;">
       <p>Direction:</p>
@@ -249,40 +299,50 @@ export default {
   </a-modal>
   <div class="bg">
     <div class="inline" v-for="value, index in row">
-      <div :class="{touched: value, box: true}" v-for="value,idx in row[index]" @click="selectBox(index, idx)" ></div>
+      <div
+        :class="{ touched: value.cmd, touchedStart: value.start ,box: true }"
+        v-for="value,idx in row[index]"
+        @click="selectBox(index, idx)"
+      ></div>
     </div>
   </div>
   <div class="margin">
     <div>
       <h4>Column: {{ row[0].length }}</h4>
-      <a-button @click="removeColumn(index)">-</a-button><a-button @click="addColumn(index)">+</a-button>
+      <a-button @click="removeColumn(index)">-</a-button>
+      <a-button @click="addColumn(index)">+</a-button>
     </div>
     <div>
-      <h4>Rows: {{row.length}}</h4><a-button @click="removeRow">-</a-button><a-button @click="addRow">+</a-button>
+      <h4>Rows: {{ row.length }}</h4>
+      <a-button @click="removeRow">-</a-button>
+      <a-button @click="addRow">+</a-button>
     </div>
   </div>
   <a-button class="margin" @click="openSetScale">Set Scale</a-button>
   <a-button class="margin" @click="getBatteryInfo">Check Drone Battery</a-button>
   <p class="margin">Scale = 1 Grid : {{ order.dist }}cm</p>
-  <p class="margin">Command: </p>
+  <p class="margin">Command:</p>
   <p class="margin">{{ instructions }}</p>
   <a-button class="margin" @click="sendCommand" danger>Send Command</a-button>
 </template>
 <style scoped>
 .box {
-  width: 20px; 
-  height: 20px; 
+  width: 20px;
+  height: 20px;
   border: 1px solid black;
   display: inline-block;
 }
 .inline {
   height: 20px;
 }
-.margin{
+.margin {
   margin-top: 16px;
 }
 .touched {
   background: green;
+}
+.touchedStart {
+  background: red;
 }
 .bg {
   background-image: url("../assets/bg.jpeg");
