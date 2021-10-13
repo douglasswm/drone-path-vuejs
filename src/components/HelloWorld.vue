@@ -204,7 +204,7 @@ export default {
     },
     sendCommand() {
       const apiCmd = 'http://localhost:5000/post'
-      const payload = { instuctions: this.instructions }
+      const payload = { instructions: this.instructions }
       this.axios.post(apiCmd, payload).then((response) => {
         console.log(response.data)
         alert(response.data)
