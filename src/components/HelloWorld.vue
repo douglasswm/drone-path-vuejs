@@ -257,7 +257,7 @@ export default {
       } else {
         let temp = {
           dist: this.order.dist,
-          angle: this.order.angle
+          angle: parseInt(this.order.angle)
         }
         this.instructions.push(temp)
         this.row[this.position.x][this.position.y] = { cmd: true, start: false }
