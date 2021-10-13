@@ -6,8 +6,13 @@ import ViteComponents, { AntDesignVueResolver } from 'vite-plugin-components';
 export default defineConfig({
   server: {
     proxy: {
-      '/batt': 'http://localhost:5000'
+      '/hello': {
+        target: 'http://localhost:5000',
+        changeOrigin: true,
+        secure: false
     }
+    },
+    
   },
   plugins: [
     vue(),

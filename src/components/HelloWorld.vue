@@ -149,6 +149,16 @@ export default {
       const api = 'http://localhost:5000/batt'
       this.axios.get(api).then((response) => {
         console.log(response.data)
+        alert(response.data)
+      })
+    },
+    sendCommand() {
+      const apiCmd = 'http://localhost:5000/post'
+      const payload = { instuctions: this.instructions }
+      this.axios.post(apiCmd, payload).then((response) => {
+        console.log(response.data)
+        alert(response.data)
+        this.instructions = []
       })
     },
     selectBox(x, y) {
@@ -256,6 +266,7 @@ export default {
   <p class="margin">Scale = 1 Grid : {{ order.dist }}cm</p>
   <p class="margin">Command: </p>
   <p class="margin">{{ instructions }}</p>
+  <a-button class="margin" @click="sendCommand" danger>Send Command</a-button>
 </template>
 <style scoped>
 .box {
